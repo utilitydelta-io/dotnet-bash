@@ -2,6 +2,16 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+    <Authors>Tyson Brown</Authors>
+    <Company>UtilityDelta</Company>
+    <Description>API to call out to linux batch (terminal) to run external processes in Linux.</Description>
+    <Copyright>Tyson Brown</Copyright>
+    <PackageIconUrl>https://github.com/utilitydelta-io/dotnet-bash/raw/master/UtilityDelta.Bash/icons8-console-40.png</PackageIconUrl>
+    <PackageProjectUrl>https://github.com/utilitydelta-io/dotnet-bash</PackageProjectUrl>
+    <PackageLicenseUrl>https://github.com/utilitydelta-io/dotnet-bash/blob/master/LICENSE</PackageLicenseUrl>
+    <RepositoryUrl>https://github.com/utilitydelta-io/dotnet-bash</RepositoryUrl>
   </PropertyGroup>
 
 </Project>
