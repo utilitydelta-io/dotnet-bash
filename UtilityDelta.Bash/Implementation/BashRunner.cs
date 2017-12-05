@@ -1,5 +1,4 @@
-﻿using System.Diagnostics;
-using UtilityDelta.Bash.Interface;
+﻿using UtilityDelta.Bash.Interface;
 
 namespace UtilityDelta.Bash.Implementation
 {
@@ -12,13 +11,14 @@ namespace UtilityDelta.Bash.Implementation
             _process = process;
         }
 
-        public Process RunCommand(string command, string workingDirectory, bool waitForFinish, int? waitingTimout,
+        public ProcessWrapper RunCommand(string command, string workingDirectory, bool waitForFinish,
+            int? waitingTimout,
             int? retryCountOnFailure)
         {
             var escapedArgs = command.Replace("\"", "\\\"");
             var process = StartProcess(escapedArgs, workingDirectory);
 
-            if (!waitForFinish) return process.Process;
+            if (!waitForFinish) return process;
 
             WaitForExit(waitingTimout, process);
 
@@ -30,7 +30,7 @@ namespace UtilityDelta.Bash.Implementation
                 retryCount--;
             }
 
-            return process.Process;
+            return process;
         }
 
         private static void WaitForExit(int? waitingTimout, ProcessWrapper process)

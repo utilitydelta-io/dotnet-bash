@@ -1,10 +1,10 @@
-﻿using System.Diagnostics;
+﻿using UtilityDelta.Bash.Implementation;
 
 namespace UtilityDelta.Bash.Interface
 {
     public interface IBashRunner
     {
-        Process RunCommand(string command, string workingDirectory, bool waitForFinish, int? waitingTimout,
+        ProcessWrapper RunCommand(string command, string workingDirectory, bool waitForFinish, int? waitingTimout,
             int? retryCountOnFailure);
     }
 }

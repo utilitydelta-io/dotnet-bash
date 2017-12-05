@@ -12,6 +12,9 @@
     <PackageProjectUrl>https://github.com/utilitydelta-io/dotnet-bash</PackageProjectUrl>
     <PackageLicenseUrl>https://github.com/utilitydelta-io/dotnet-bash/blob/master/LICENSE</PackageLicenseUrl>
     <RepositoryUrl>https://github.com/utilitydelta-io/dotnet-bash</RepositoryUrl>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <FileVersion>2.0.0.0</FileVersion>
+    <Version>2.0.0</Version>
   </PropertyGroup>
 
 </Project>
